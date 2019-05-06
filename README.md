@@ -20,3 +20,11 @@ For backend, the requirements were:
 2) Deployment to Google Cloud.  
   
 We completed both of these requirements because to model users and contacts we used SQLAlchemy and modeled the data using the various database methods we learned in class. For our app, we also designed the API using Flask, creating routes for the front-end to interact with. Finally, we used the Google Cloud Platform to deploy our app so that it could be run remotely and so our IOS developers could interact with it.  
+
+For frontend, the requirements were:
+1) AutoLayout using NSLayoutConstraint or SnapKit
+2) At least one UICollectionView or UITableView
+3) Some form of navigation (UINavigationController or UITabBarController) to navigate between screens
+4) Integration with an API - this API must provide some meaningful value to your app. For example, if you’re creating a music app, you could use the Apple Music API. Most of you will integrate with an API written by students in the backend course.
+
+The entire UI is created using SnapKit to place all objects on the screen. A UITableView is used to display the user's contacts and each cell can be pressed to view the details of that contact. We used a UITabBarController to navigate between the user's profile, the add contact page, and the user's contacts page. The API is fully integrated with the app so that all information is stored in the API. Every time a user updates their profile, the API is called to update the user as well. Everytime the user views their contacts, the UITable is loaded using data that is retrieved from the API.
